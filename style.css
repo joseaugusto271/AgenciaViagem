@@ -45,3 +45,85 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Estilos para o container principal */
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: url(img/london.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+/* Estilos para a barra lateral esquerda */
+.sidebar {
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-claro);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    flex: 2;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.subtitle {
+    color: var(--texto-secundario);
+    font-size: 2.5rem;
+}
+
+/* Estilos para a barra lateral direita */
+.secondary-content {
+    flex: 1;
+    min-width: 200px;
+    background: var(--texto-terciario);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilos para os itens das listas */
+li {
+    padding: 9px;
+}
+
+/* Estilos para formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid var(--texto-cinza);
+    border-radius: 5px;
+}
+
+button {
+    background: var(--fundo-escuro);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #005f8a;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 769px) {
+    .container {
+        flex-direction: column;
+    }
+}
