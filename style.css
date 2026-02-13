@@ -122,6 +122,15 @@ img {
     border-radius: 5px;
 }
 
+/* Estilo para o rodapé */
+footer {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
 @media (max-width: 769px) {
     .container {
         flex-direction: column;
